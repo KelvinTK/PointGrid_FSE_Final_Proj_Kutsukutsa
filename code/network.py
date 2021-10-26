@@ -128,7 +128,7 @@ def populate_integer_seg_label(pc, voxel_label, index):
     #     label: size n x 1
 
     num_points = pc.shape[0]
-    label = np.zeros((num_points), dtype=np.int32)
+    label = np.zeros(num_points, dtype=np.int32)
     xyz = pc[:, 0: 3]
     centroid = np.mean(xyz, axis=0, keepdims=True)
     xyz -= centroid
@@ -256,7 +256,7 @@ def intersection_over_union(pred_seg, integer_seg_label):
     for i in range(1, NUM_SEG_PART):
         intersection = np.sum(np.logical_and(pred_seg == i, integer_seg_label == i))
         union = np.sum(np.logical_or(pred_seg == i, integer_seg_label == i))
-        if (union > 0):
+        if union > 0:
             counts += 1.0
             iou += (float(intersection) / float(union))
     iou /= counts

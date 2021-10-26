@@ -3,7 +3,7 @@ from setuptools import setup
 name = 'pointgrid-contrib'
 version = '1.0'
 
-with open("README", 'r') as f:
+with open("README.md", 'r') as f:
     long_description = f.read()
 
 with open("requirements.txt") as f:
@@ -19,5 +19,5 @@ if __name__ == "__main__":
         author_email='A.Artemov@skoltech.ru',
         long_description=long_description,
         packages=[name],
-        install_requires=requirements, #external packages as dependencies
-)
+        install_requires=requirements,  # external packages as dependencies
+    )
