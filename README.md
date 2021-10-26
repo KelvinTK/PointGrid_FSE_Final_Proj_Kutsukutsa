@@ -34,26 +34,11 @@ The original authors:	https://github.com/trucleduc/PointGrid.git
 		POINTGRID: A Deep Network for 3D Shape Understanding
 	*******************************************************************
 
-Due to lack of time, I wasn't able to test and verify the functionality of each and
-every part of this project modification. I however hope that the steps left will be
-much easier and smoother. 
+To perform basic setup use installations.sh 
+To build Docker image use build.sh
+To run the application use run.sh
+To test the application run test.sh
 
-Before you begin, please run the installations.sh executable in the root folder or
-copy-paste the following commands:
-
-1. to verify that the installations.sh executable is there run:
-	ls
-	
-2. It's time to make some installations. please note that this may take time and 
-   an internet connection is needed
-	./installations.sh
-
-3. now you can navigate to the folder with the project. Please read each README
-   file in every folder:
-	cd PointGrid/
-	
-The folder names are quite self explanatory and I assume that you know the basics
-of folder navigation. 
 
 	*****************************************************************
 			MODIFYING THIS CONTAINER

@@ -1,5 +1,7 @@
 FROM tensorflow/tensorflow:1.13.2-py3 
 COPY . .
+COPY ./code .
+COPY ./data .
 RUN pip install scipy
 RUN apt update 
 RUN apt install -y git
